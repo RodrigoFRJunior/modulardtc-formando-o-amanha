@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0; /* Define margens */
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -21,16 +21,16 @@
 
 .logo_modular{
     display: flex;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right:auto;
+    margin-top: 5%; /* Define margens */
+    margin-left: auto; /* Define margens */
+    margin-right:auto; /* Define margens */
     width: 75%;
     }
 .input_email{
     display: block;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right:auto;
+    margin-top: 10%; /* Define margens */
+    margin-left: auto; /* Define margens */
+    margin-right:auto; /* Define margens */
     width: 75%;
     border-radius: 10px;
     padding: 12px;
@@ -44,9 +44,9 @@
     }
 .input_name{
     display: flex;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right:auto;
+    margin-top: 5%; /* Define margens */
+    margin-left: auto; /* Define margens */
+    margin-right:auto; /* Define margens */
     width: 75%;
     border-radius: 10px;
     padding: 12px;
@@ -60,10 +60,10 @@
     }
 .botão_continuar{
     cursor: pointer;
-    display: flex;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right:auto;
+    display: flex; /* Define margens */
+    margin-top: 5%; /* Define margens */
+    margin-left: auto; /* Define margens */
+    margin-right:auto; /* Define margens */
     width: 25%;
     border-radius: 10px;
     padding: 2%;

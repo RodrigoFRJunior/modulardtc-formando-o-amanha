@@ -13,15 +13,33 @@
         <div class="container">
             <div class="div_user_hud">
                 <img class="logo_modular" src="D:\REPOSITORIOS\modulardtc-formando-o-amanha\img\logo-modular.svg" alt="logo-modular">
-                <input class="input_email" type="email" id="email" name="email" placeholder="Email:" required>
+                <input class="input_email" type="email" id="email" name="email" minlength="3" maxlength="50" placeholder="Email:" required>
                 <input class="input_name" type="name" id="name" name="name" placeholder="Nome:" required>
-                <button class="botão_continuar" type="submit">Continuar</button>
+                <button class="botão_continuar"  onclick="validarLogin()" type="submit">Continuar</button>
+                <script>
+                    function validarLogin() {
+                        const email = document.getElementById('email').value;
+                        const name = document.getElementById('name').value;
+
+                        const emailAdministrador = 'admin@gmail.com';
+                        const nameAdministrador = 'admin';
+            
+                        if (email === emailAdministrador && name === nameAdministrador) {
+                            alert('Bem-vindo, Administrador!');
+
+                            window.location.href = 'painelAdministrador.html';
+                            
+                        } else {
+
+                            window.location.href = 'select_minigame.html';
+                        }
+                    }
+                </script>
             </div>
             <div class="container_img">
                 <p class="texto">Formando <br>o <a class="o">amanhã!</a></p>
             </div>
         </div>
-        
     </main>
 </body>
 </html>
