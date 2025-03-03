@@ -3,38 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formando o Amanhã</title>
+    <title>Formando o amanhã</title>
     <link rel="shortcut icon" href="img/modulardtc_logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="container">
             <div class="div_user_hud">
-                <img class="logo_modular" src="D:\REPOSITORIOS\modulardtc-formando-o-amanha\img\logo-modular.svg" alt="logo-modular">
-                <input class="input_email" type="email" id="email" name="email" minlength="3" maxlength="50" placeholder="Email:" required>
-                <input class="input_name" type="name" id="name" name="name" placeholder="Nome:" required>
-                <button class="botão_continuar"  onclick="validarLogin()" type="submit">Continuar</button>
-                <script>
-                    function validarLogin() {
-                        const email = document.getElementById('email').value;
-                        const name = document.getElementById('name').value;
-
-                        const emailAdministrador = 'admin@gmail.com';
-                        const nameAdministrador = 'admin';
-            
-                        if (email === emailAdministrador && name === nameAdministrador) {
-                            alert('Bem-vindo, Administrador!');
-
-                            window.location.href = 'painelAdministrador.html';
-                            
-                        } else {
-
-                            window.location.href = 'select_minigame.html';
-                        }
-                    }
-                </script>
+                <div class="logo_modular">
+                    <img class="logo" src="img/logo-modular.svg" alt="logo-modular">
+                </div>
+                    <input class="input_email" type="email" id="email" name="email" minlength="3" maxlength="50" placeholder="Email:" required>
+                    <input class="input_password" type="password" id="password" name="password" minlength="3" maxlength="50" placeholder="Senha:" required>
+                <div class="container_botao">
+                    <button class="botão_registrar"  onclick="registrarLogin()" type="submit">Registre-se</button>
+                    <button class="botão_continuar"  onclick="validarLogin()" type="button">Continuar</button>
+                    <script src="js/validarAdm.js"></script>
+                    <script src="js/register_page.js"></script>
+                </div>
             </div>
             <div class="container_img">
                 <p class="texto">Formando <br>o <a class="o">amanhã!</a></p>
