@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-select</title>
+    <link rel="shortcut icon" href="assets/img/modulardtc-icon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pages/game-select/game-select.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <!-- Primeira coluna (esquerda) -->
+            <div class="game-box">
+
+                 <!-- Logo empresarial -->
+                <div class="logo_modular">
+                    <img class="logo" src="assets/img/logo-modular.svg" alt="logo-modular">
+                </div>
+                
+                <label class="textinho">Escolha um mini-game</label>
+
+                <!-- Botão segurança -->
+                 <div class="btn-container2">
+                    <div class="btn-container">
+                        <button onclick="btnSeguranca()" class="btn-item">
+                            <img src="assets/img/hat-icon.svg" class="img_item" alt="Ícone de segurança">
+                        </button>
+                        <span class="btn_text">Segurança</span>
+                    </div>
+                    
+                    <!-- Botão primeiros socorros -->
+                    <div class="btn-container">
+                        <button class="btn-item">
+                            <img src="assets/img/heart-icon.svg" class="img_item" alt="Ícone de coração">
+                        </button>
+                        <span class="btn_text">Primeiros Socorros</span>
+                    </div>
+
+                    <!-- Botão primeiros socorros -->
+                    <div class="btn-container">
+                        <button class="btn-item">
+                            <img src="assets/img/fire-icon.svg" class="img_item" alt="Ícone de incêndio">
+                        </button>
+                        <span class="btn_text">Combate a incêndio</span>
+                    </div>
+
+                    <!-- Botão primeiros socorros -->
+                    <div class="btn-container">
+                        <button class="btn-item">
+                            <img src="assets/img/leave-icon.svg" class="img_item" alt="Ícone de folhas">
+                        </button>
+                        <span class="btn_text">Boas práticas</span>
+                    </div>
+            </div>
+            <label class="voltar_text">Voltar</label>
+            <button class="voltar" onclick="voltarPagina()">
+                <img class="img_voltar"  src="assets/img/voltar.png" alt="Ícone de voltar">
+            </button>
+            <script>
+                function voltarPagina() {
+                    window.history.back(); // Volta para a página anterior
+                }
+                function btnSeguranca() {
+                    window.location.href = "minigame-seguranca.html";
+                }
+            </script>
+
+            
+            </div>
+            <div class="container_img">
+                <p class="texto">Aprender é <br> mais divertido<br> com <a class="o">jogos!</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

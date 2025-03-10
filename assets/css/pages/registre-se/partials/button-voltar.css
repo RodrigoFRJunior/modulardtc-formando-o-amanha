@@ -1,0 +1,39 @@
+/* 🔹 Estilo do botão voltar */
+.voltar {
+    position: fixed;
+    top: 12px;    /* Posição do topo */
+    left: 12px;   /* Posição do topo */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid #8BC441;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.voltar:hover {
+    background-color: #8BC441;
+    transition: 0.3s ease-in-out; /* Transição suave */
+} 
+.img_voltar {
+        max-width: 22px;
+        border-radius: 50%; /* Opcional: pode ser útil para imagens redondas */
+}
+.img_voltar:hover {
+            filter: brightness(0) invert(1); /* Torna a imagem branca */
+}
+
+.voltar_text{
+                    position: fixed;
+                    top: 18px;    /* Posição do topo */
+                    left: 60px;   /* Posição do topo */
+                    width: 58px;
+                    height: 58px;
+                    font-size: 17px;
+                    font-weight: 600;
+
+}

@@ -1,0 +1,24 @@
+/* 🔹 Estilo do lado direito (imagem) */
+.container_img {
+    flex: 1;
+    background: url("/assets/img/modular-fest.png") center/cover no-repeat;
+    background-color: #052631a1;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+    /* 🔹 Texto dentro da imagem */
+    .texto {
+        font-size: 6vw; /* Tamanho flexível para se ajustar à tela */
+        font-weight: 150;
+}
+
+    /* 🔹 Texto dentro da imagem */
+    .o {
+        font-size: 6vw;
+        font-weight: 600;
+    }

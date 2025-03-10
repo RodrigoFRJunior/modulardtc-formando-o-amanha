@@ -1,0 +1,34 @@
+/* Estilização para os botões */
+.botão_continuar, .botão_registrar {
+    width: auto; /* Para manter responsivo */
+    max-width:60%; /* Ajuste conforme necessário */
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid #8BC441;
+    font-size: 14px;
+    font-weight: 600;
+    color: #052631;
+    background: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* Centraliza os botões */
+.buttons-wrapper {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efeito hover dos botões */
+.botão_continuar:hover, .botão_registrar:hover {
+    background-color: #8bc441fb;
+    color: white;
+}
+
+
+

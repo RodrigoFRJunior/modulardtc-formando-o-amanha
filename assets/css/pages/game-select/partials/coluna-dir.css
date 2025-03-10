@@ -1,0 +1,25 @@
+
+.container_img {
+    flex: 1;
+    background: url("/assets/img/training-room.png") center/cover no-repeat;
+    background-color: #052631a1;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+                    }
+                    
+        /* 🔹 Texto dentro da imagem */
+        .texto {
+            text-justify: auto;
+            font-size: 5vw; /* Tamanho flexível para se ajustar à tela */
+            font-weight: 500;
+            }
+        
+        .o {
+            text-justify: auto;
+            font-size: 5vw;
+            font-weight: 600;
+            }

@@ -1,0 +1,6 @@
+* {
+    margin: 0; /* Define margens */
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}

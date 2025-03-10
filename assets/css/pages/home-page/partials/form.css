@@ -1,0 +1,31 @@
+.login-form {
+    max-width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Para manter responsivo */
+    
+    font-size: 25px;
+}
+
+.input_grup{
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.input_email, .input_password {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 10px;
+    border: solid #8BC441;
+    font-size: 16px;
+    font-weight: 600;
+    color: #052631;
+    background: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

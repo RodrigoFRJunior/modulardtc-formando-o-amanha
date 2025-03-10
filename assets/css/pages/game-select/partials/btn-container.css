@@ -1,0 +1,12 @@
+.btn-container2{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-container {
+    display: flex; /* Alinha o botão e o texto lado a lado */
+    flex-direction: row;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Adiciona um espaçamento entre o botão e o texto */
+    margin-bottom: 5vh;
+    margin-left: 4vh;
+}

@@ -1,0 +1,25 @@
+.btn-item {
+    display: flex; /* Centraliza a imagem dentro do botão */
+    justify-content: center;
+    align-items: center;
+    width: 7vh;
+    height: 7vh;
+    background-color: #8BC441;
+    border-radius: 10%;
+    border: solid #8BC441;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-item:hover {
+    background-color: #78ac35;
+    transition: 0.3s ease-in-out; /* Transição suave */
+} 
+.img_item:hover {
+    filter: brightness(0) invert(1); /* Torna a imagem branca */
+    transition: 0.2s ease-in-out; /* Transição suave */
+}
+.btn_text {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap; /* Impede quebra de linha no texto */
+}

@@ -1,0 +1,72 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: #EFEFEF; /* Cor de fundo */
+}
+
+#game-container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#pergunta-container {
+    font-size: 34px;
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+}
+
+#opcoes {
+    display: flex; /* Aplica o layout flex */
+    flex-wrap: wrap; /* Permite que os botões "quebrem" para a linha seguinte se necessário */
+    justify-content: space-between; /* Distribui o espaço entre os botões */
+    margin-top: 20vh;
+}
+
+#opcoes button {
+    width: 20%; /* Cada botão ocupará 48% da largura do contêiner */
+    margin-top: 10vh;
+    padding: 1%;
+    border: solid #8BC441;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;;
+    font-size: 24px;
+    font-weight: 550;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+#pontuacao {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vh;
+    border: solid #8BC441;
+    border-radius: 10px;
+    width: 20%;
+    padding: 5px;
+}
+
+#opcoes button:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+.correta {
+    background-color: #8BC441; /* Cor verde para resposta correta */
+    color: #ffffff; /* Texto branco */
+}
+
+.errada {
+    background-color: red; /* Cor vermelha para resposta errada */
+    color: #ffffff; /* Texto branco */
+}
+
+#barra-tempo {
+    margin-top: 1%;
+    width: 100%; /* Largura total da barra */
+    height: 15px; /* Altura da barra */
+    background-color: green; /* Cor inicial da barra de tempo */
+    border-radius: 10px;
+    transition: width 1s linear; /* Transição suave da largura */
+}

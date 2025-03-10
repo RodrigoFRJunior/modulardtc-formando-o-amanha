@@ -1,2 +1,3 @@
 # modulardtc-formando-o-amanha
- Gamificação de treinamentos para novos e antigos colaboradores /  Gamification of training for new and old employees
+
+    Projeto foi desenvolvido para auxiliar no desenvolvimento e aprendizado de novos e antigos colaboradores, abordando temas importantes como boas práticas com a natureza, combate a incêndio, segurança.

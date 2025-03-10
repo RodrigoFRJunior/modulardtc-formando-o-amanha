@@ -1,0 +1,20 @@
+.input-grup{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+/* 🔹 Inputs responsivos */
+.input_email, .input_nome, .input_cpf, .input_senha{
+    margin-bottom: 2vh;
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 10px;
+    border: solid #8BC441;
+    font-size: 16px;
+    font-weight: 600;
+    color: #052631;
+    background: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
