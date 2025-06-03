@@ -1,4 +1,4 @@
-# Plataforma de Treinamento - Modular Data Centers
+# Formando o Amanhã - Modular Data Centers
 
 Uma aplicação web desenvolvida para auxiliar no **treinamento de colaboradores**, novos e antigos, da empresa **Modular Data Centers**.  
 O sistema aborda temas essenciais como:
