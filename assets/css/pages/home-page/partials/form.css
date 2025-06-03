@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     width: 80%; /* Para manter responsivo */
-    
     font-size: 25px;
 }
 
@@ -17,15 +16,21 @@
     justify-content: center; /* Centraliza verticalmente */
 }
 
-.input_email, .input_password {
+.input-name{
     width: 80%;
     max-width: 400px;
     padding: 12px;
     border-radius: 10px;
     border: solid #8BC441;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 200;
     color: #052631;
     background: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+  .input-name{
+    width: auto;
+  }
 }

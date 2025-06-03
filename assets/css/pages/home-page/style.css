@@ -6,3 +6,5 @@
 @import './partials/logo-mdtc.css';
 @import './partials/form.css';
 @import './partials/button.css';
+
+@import '/assets/css/global/global.css'

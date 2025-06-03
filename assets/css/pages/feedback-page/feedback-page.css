@@ -1,0 +1,15 @@
+@import './partials/normalize.css';
+
+@import './partials/container.css';
+
+@import './partials/column-right.css';
+
+@import './partials/column-left.css';
+
+@import './partials/logo-mdtc.css';
+
+@import './partials/label-text.css';
+
+@import './partials/button.css';
+
+@import '/assets/css/global/global.css'

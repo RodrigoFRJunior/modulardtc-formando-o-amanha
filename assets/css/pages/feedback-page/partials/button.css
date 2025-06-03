@@ -1,0 +1,55 @@
+   .home-button{
+    margin-top: 5vh;
+    width: auto; /* Para manter responsivo */
+    max-width:80%; /* Ajuste conforme necessário */
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 1vh;
+    border: solid #8BC441; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #052631;
+    background: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    }
+
+    .home-button:hover{
+        background-image: linear-gradient(to bottom, #8bc441a3, #8BC441);
+        transform: translatey(-5px);
+        filter: brightness(1.1);
+    }
+    
+@media (max-width: 480px) {
+  .home-button{
+    width: auto;
+    margin-top: 1vh;
+    margin-left: 1vh;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+   .home-button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+  }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+   .home-button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+   .home-button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+  }
+}

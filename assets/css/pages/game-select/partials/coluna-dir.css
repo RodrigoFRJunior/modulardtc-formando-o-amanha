@@ -23,3 +23,37 @@
             font-size: 5vw;
             font-weight: 600;
             }
+
+/* 🔹 Desativa completamente a seção em celulares */
+@media (max-width: 480px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}

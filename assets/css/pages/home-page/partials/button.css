@@ -1,12 +1,12 @@
 /* Estilização para os botões */
 .botão_continuar, .botão_registrar {
     width: auto; /* Para manter responsivo */
-    max-width:60%; /* Ajuste conforme necessário */
+    max-width:80%; /* Ajuste conforme necessário */
     padding: 6px 10px;
     cursor: pointer;
-    border-radius: 10px;
-    border: solid #8BC441;
-    font-size: 14px;
+    border-radius: 1vh;
+    border: solid #8BC441; 
+    font-size: 16px;
     font-weight: 600;
     color: #052631;
     background: none;
@@ -19,7 +19,6 @@
     margin-top: 1vh;
     display: flex;
     flex-direction: row;
-    gap: 25px;
     align-items: center;
     justify-content: center;
 }
@@ -30,5 +29,10 @@
     color: white;
 }
 
+@media (max-width: 480px) {
+  .botão_continuar{
+    width: auto;
+  }
+}
 
 

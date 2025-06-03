@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formando o amanhã</title>
+    <link rel="shortcut icon" href="/assets/img/modulardtc-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/pages/home-page/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="login-container">
+
+            <div class="login-box">
+                <div class="logo_modular">
+                    <img class="logo" src="assets/img/FAM-LOGO.png " alt="logo-modular" draggable="false" >
+                </div>
+                <div class="login-form">
+                    <label class="label" id="menuInput">Bem-vindo, identifique-se!</label>
+                       <form action="" class="input_grup">
+                        <input 
+                            class="input-name" 
+                            type="text" 
+                            id="username" 
+                            name="name"  
+                            maxlength="50" 
+                            placeholder="Seu nome" 
+                            required
+                        >
+                        </form>
+                 
+                    <div class="buttons-wrapper">
+                        <button class="botão_continuar" type="button" onclick="saveUsername()" onclick="validarNome()">Continuar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container_img">
+                <p class="texto">Treinando você para o <a class="o">futuro!</a></p>
+            </div>
+        </div>
+        <script>
+            function saveUsername() {
+            const nome = document.getElementById("username").value;
+            const regex = /^[A-Za-zÀ-ÿ\s]+$/;
+            if (!regex.test(nome)) {
+            alert('O nome deve conter apenas letras e espaços!');
+            } else {
+            localStorage.setItem("username", nome);
+            window.location.href = "select-minigame.html"; // Redireciona para a próxima página
+            }
+            }
+            // Se quiser limpar o input manualmente, use:
+            // document.getElementById('nome').value = '';
+        </script>
+        <script>
+              document.getElementById('username').addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                event.preventDefault(); // Impede a quebra de linha ou envio
+                const nome = event.target.value;
+                localStorage.setItem("username", nome);
+                window.location.href = "select-minigame.html"; // Redireciona para a próxima página
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>

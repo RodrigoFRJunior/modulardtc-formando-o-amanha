@@ -1,0 +1,23 @@
+/* 🔹 Logo Responsiva */
+.logo_modular{
+}
+.logo{
+    width: 70vw;
+    max-width: 450px;  
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  .logo {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .logo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+  .logo {
+     width: 60%;
+  }
+}

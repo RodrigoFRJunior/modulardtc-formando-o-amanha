@@ -1,0 +1,88 @@
+.label-text {
+  margin-top: 0vh; /* Corrigido o valor */
+  text-align: center;
+  font-size: 1rem; /* Tamanho relativo */
+  font-weight: 700;
+  color: #052631;
+}
+
+.subtittle {
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Estilo comum para os inputs */
+.name,
+.points,
+.result {
+  border: 3px solid #8bc34a; /* Cor verde clara */
+  padding: 1rem;
+  font-size: 1.125rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0.5rem auto; /* Centraliza em telas pequenas */
+  display: block;
+}
+
+.player-info {
+  display: inline-block;
+  font-weight: 700;
+  color: #052631;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  .name,
+  .points,
+  .result {
+    font-size: 1rem;
+    padding: 0.8rem;
+    max-width: 90%;
+  }
+
+  .label-text {
+    font-size: 0.95rem;
+  }
+
+  .subtittle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .name,
+  .points,
+  .result {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .label-text {
+    font-size: 0.9rem;
+  }
+
+  .subtittle {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .label-text{
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .label-text {
+    font-size: 1vw;
+  }
+  .name,
+  .points,
+  .result {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}
+

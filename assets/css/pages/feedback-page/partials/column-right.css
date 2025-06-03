@@ -1,0 +1,49 @@
+/* 🔹 Estilo do lado esquerdo (imagem) */
+
+.container_img {
+    flex: 1;
+    height: 100%;
+    background: url("/assets/img/modular-stand.jpg") center/cover no-repeat;
+    background-color: #052631a1;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;   /* 🔹Cor do texto dentro da imagem */
+}
+
+/* 🔹 Texto dentro da imagem */
+.texto {
+    font-size: 6vw; /* Tamanho flexível para se ajustar à tela */
+    font-weight: 600;
+   
+}
+
+.o {
+    font-size: 7vw;
+    font-weight: 600;
+    text-decoration: overline;
+}
+
+@media (max-width: 720px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}

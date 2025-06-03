@@ -6,9 +6,9 @@
     left: 12px;   /* Posição do topo */
     width: 40px;
     height: 40px;
-    border-radius: 10%;
+    border-radius: 20%;
     border: solid #8BC441;
-    background-color: none;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,3 +38,39 @@
                                     font-weight: 600;
 
                 }
+
+@media (max-width: 1024px) {
+    .voltar{
+        height: 80%;
+        width: 80%;
+        max-width: 6vh;
+        max-height: 6vh;
+    }
+    .voltar_text{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .voltar{
+        height: 80%;
+        width: 80%;
+        max-width: 34px;
+        max-height: 34px;
+    }
+    .voltar_text{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .voltar{
+        height: 80%;
+        width: 80%;
+        max-width: 44px;
+        max-height: 44px;
+    }
+    .voltar_text{
+        display: none;
+    }
+}

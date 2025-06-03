@@ -7,3 +7,5 @@
 @import './partials/input.css';
 @import './partials/button-continuar.css';
 @import './partials/button-voltar.css';
+
+@import '/assets/css/global/global.css'

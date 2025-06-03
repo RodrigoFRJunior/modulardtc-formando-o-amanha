@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="shortcut icon" href="/assets/img/modulardtc-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets\css\pages\feedback-page\feedback-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <div class="login-box">
+                <div class="label-text">
+                      <div class="logo_modular">
+                        <div>
+                    <img class="logo" src="assets/img/FAM-LOGO.png" alt="logo-modular" draggable="false">
+                    </div>
+                </div>
+                    <p>
+                        <h1 class="tittle">Você finalizou o mini-game</h1>
+                        
+                        <h2 class="subtittle">Acompanhe os resultados!</h2>
+                    </p>   
+                    <p class="player-info">
+                        <p class="name"><a>Nome: </a><a class="saudacao" id="saudacao"></a></p>
+
+                        <p class="points">Pontuação: <a class="pontuacao1" id="pontuacao1"></a></p>
+                        <p class="result">Resultado: <a id="result-valor"></a> </p>
+                    </p>
+                   <button id="botaoSeguir" style="display: none;" class="home-button" onclick="refazer()">Refazer</button>
+                   <button class="home-button" type="button" onclick="voltarPagina()">Finalizar</button>
+                </div>
+            </div>
+            <div class="container_img">
+                <p class="texto">FIM DO <br><a class="o">JOGO!</a></p>
+            </div>
+        </div>
+        <script>
+            function voltarPagina() {
+            window.location.href = 'select-minigame.html'; // Volta para a página anterior
+            }
+        </script>
+        <script>
+            const nome = localStorage.getItem("username");
+            if (nome) {
+            document.getElementById("saudacao").innerText = `${nome}`;
+            } 
+        </script>
+        <script>
+            const pontuacao = localStorage.getItem("pontuacao");
+            if (nome) {
+            document.getElementById("pontuacao1").innerText = `${pontuacao}`;
+            } 
+        </script>
+        <script>
+        const status = localStorage.getItem("Status");
+        const botao = document.getElementById("botaoSeguir");
+                    if (pontuacao >= 600) {
+                    document.getElementById("result-valor").innerText = `APROVADO`;
+                    document.getElementById("result-valor").style.color = "green";
+                    } else {
+                    document.getElementById("result-valor").innerText = `REPROVADO`;
+                    document.getElementById("result-valor").style.color = "red";
+                    botao.style.display = "inline"; 
+                    }
+        </script>
+        <script>
+            function refazer(){
+                
+            };
+        </script>
+        <script src="assets\js\epi.js"></script>
+        <script src="assets/js/sos.js"></script>
+        <script>
+            const minigameAtual = localStorage.getItem('minigameAtual');
+            document.getElementById('botaoSeguir').addEventListener('click', () => {
+                if (minigameAtual) {
+                window.location.href = minigameAtual;
+                } else {
+                alert('Nenhum minigame encontrado para refazer.');
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>

@@ -14,11 +14,34 @@
 
 /* 🔹 Texto dentro da imagem */
 .texto {
-    font-size: 6vw; /* Tamanho flexível para se ajustar à tela */
-    font-weight: 150;
+    font-size: 5vw; /* Tamanho flexível para se ajustar à tela */
+    font-weight: 250;
 }
 
 .o {
-    font-size: 6vw;
-    font-weight: 600;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .container_img {
+    display: none !important;  /* Remove completamente do layout */
+}
+  .texto,
+  .o {
+    display: none !important;
+  }
+
 }

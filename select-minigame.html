@@ -17,7 +17,7 @@
 
                  <!-- Logo empresarial -->
                 <div class="logo_modular">
-                    <img class="logo" src="assets/img/logo-modular.svg" alt="logo-modular">
+                    <img class="logo" src="assets/img/FAM-LOGO.png" alt="logo-modular" draggable="false">
                 </div>
                 
                 <label class="textinho">Escolha um mini-game</label>
@@ -26,49 +26,58 @@
                  <div class="btn-container2">
                     <div class="btn-container">
                         <button onclick="btnSeguranca()" class="btn-item">
-                            <img src="assets/img/hat-icon.svg" class="img_item" alt="Ícone de segurança">
+                            <img src="assets/img/hat-icon.svg" id="btnSeguranca" class="img_item" alt="Ícone de segurança" draggable="false">
                         </button>
                         <span class="btn_text">Segurança</span>
                     </div>
                     
                     <!-- Botão primeiros socorros -->
                     <div class="btn-container">
-                        <button class="btn-item">
-                            <img src="assets/img/heart-icon.svg" class="img_item" alt="Ícone de coração">
+                        <button onclick="btnSos()" class="btn-item">
+                            <img src="assets/img/heart-icon.svg" class="img_item" alt="Ícone de coração" draggable="false">
                         </button>
                         <span class="btn_text">Primeiros Socorros</span>
                     </div>
 
                     <!-- Botão primeiros socorros -->
                     <div class="btn-container">
-                        <button class="btn-item">
-                            <img src="assets/img/fire-icon.svg" class="img_item" alt="Ícone de incêndio">
+                        <button class="btn-item" onclick="btnIncendio()">
+                            <img src="assets/img/fire-icon.svg" class="img_item" id="btnIncendio" alt="Ícone de incêndio" draggable="false">
                         </button>
                         <span class="btn_text">Combate a incêndio</span>
                     </div>
 
                     <!-- Botão primeiros socorros -->
                     <div class="btn-container">
-                        <button class="btn-item">
-                            <img src="assets/img/leave-icon.svg" class="img_item" alt="Ícone de folhas">
+                        <button class="btn-item" onclick="btnPraticas()">
+                            <img src="assets/img/leave-icon.svg" class="img_item" alt="Ícone de folhas" draggable="false">
                         </button>
                         <span class="btn_text">Boas práticas</span>
                     </div>
             </div>
             <label class="voltar_text">Voltar</label>
             <button class="voltar" onclick="voltarPagina()">
-                <img class="img_voltar"  src="assets/img/voltar.png" alt="Ícone de voltar">
+                <img class="img_voltar"  src="assets/img/voltar.png" alt="Ícone de voltar" draggable="false">
             </button>
             <script>
+
                 function voltarPagina() {
-                    window.history.back(); // Volta para a página anterior
+                    window.location.href = 'index.html'; // Volta para a página anterior
                 }
                 function btnSeguranca() {
                     window.location.href = "minigame-seguranca.html";
+                    localStorage.setItem("btnSeguranca",);
                 }
-            </script>
-
-            
+                function btnSos() {
+                    window.location.href = "minigame-sos.html";
+                }
+                 function btnIncendio() {
+                    window.location.href = "minigame-incendio.html";
+                }
+                 function btnPraticas() {
+                    window.location.href = "minigame-boasPraticas.html";
+                }
+            </script>     
             </div>
             <div class="container_img">
                 <p class="texto">Aprender é <br> mais divertido<br> com <a class="o">jogos!</a></p>

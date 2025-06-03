@@ -4,4 +4,12 @@
     font-size: 4vh;
     font-weight: 700;
     margin-bottom: 5vh;
+    color: #052631;
+}
+
+@media (max-width: 720px) {
+.textinho{
+    font-size: clamp(18px, 5vw, 28px);
+}
+
 }

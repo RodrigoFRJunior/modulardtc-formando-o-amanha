@@ -1,72 +1,222 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: #EFEFEF; /* Cor de fundo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
 }
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea;
+    overflow-x: hidden; /* Impede que elementos ultrapassem horizontalmente */
+    overflow-y: hidden; /* Impede que elementos ultrapassem horizontalmente */
+}
+
 
 #game-container{
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
     text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vw;
 }
 
 #pergunta-container {
-    font-size: 34px;
-    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+    font-size: 2.5vw;
+    font-weight:900;
+    margin: 20vh 5%; /* Espaçamento entre a pergunta e as opções */
+    color: #052631;
 }
 
 #opcoes {
     display: flex; /* Aplica o layout flex */
     flex-wrap: wrap; /* Permite que os botões "quebrem" para a linha seguinte se necessário */
     justify-content: space-between; /* Distribui o espaço entre os botões */
-    margin-top: 20vh;
+    margin-top: 0vh;
+    
 }
 
 #opcoes button {
+    color: #052631;
     width: 20%; /* Cada botão ocupará 48% da largura do contêiner */
     margin-top: 10vh;
     padding: 1%;
-    border: solid #8BC441;
-    border-radius: 10px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;;
-    font-size: 24px;
-    font-weight: 550;
+    font-size: clamp(18px, 5vw, 14px);
+    font-weight:900;
     transition: 0.3s;
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom, #8bc441a3, #8BC441);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #pontuacao {
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 5vh;
-    border: solid #8BC441;
-    border-radius: 10px;
-    width: 20%;
+    font-size: 2vw;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #8bc441a3, #8BC441);
+    width: 25%;
     padding: 5px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
 #opcoes button:hover {
-    background-color: #ddd; /* Cor de fundo ao passar o mouse sobre o botão */
+    background-image: linear-gradient(to bottom, #8bc441a3, #8BC441);
+    color: #ffffff;
+    transform: translatey(-10px);
+    filter: brightness(1.1);
 }
 
 .correta {
-    background-color: #8BC441; /* Cor verde para resposta correta */
+    background-color: #115700; /* Cor verde para resposta correta */
     color: #ffffff; /* Texto branco */
 }
 
-.errada {
-    background-color: red; /* Cor vermelha para resposta errada */
+.errada{
+    background-color: rgb(218, 15, 15); /* Cor vermelha para resposta errada */
     color: #ffffff; /* Texto branco */
+
 }
 
 #barra-tempo {
     margin-top: 1%;
     width: 100%; /* Largura total da barra */
-    height: 15px; /* Altura da barra */
-    background-color: green; /* Cor inicial da barra de tempo */
-    border-radius: 10px;
-    transition: width 1s linear; /* Transição suave da largura */
+    height: 2vw; /* Altura da barra */
+    background-image: linear-gradient(90deg, #648d2f, #8BC441);
+    background-color: #8BC441; /* Cor inicial da barra de tempo */
+    border-radius: 15px;
+    transition: 1s linear; /* Transição suave da largura */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.point{
+    transform: translatey(-5px);
+    filter: brightness(1.1);
+}
+
+/* 🔹 Desativa completamente a seção em celulares */
+@media (max-width: 480px) and (orientation: portrait) {
+    #opcoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    #opcoes button{
+        font-size: 5vw;
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 1%;
+    }
+
+    #pontuacao {
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 5vw;
+        width: 80%; 
+    }
+
+    #barra-tempo {
+        height: 6vw; /* Altura da barra */
+    }
+
+    #pergunta-container {
+    font-size: 5vw;
+    font-weight:900;
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+
+}
+}
+
+@media (max-width: 768px) and (orientation: landscape){
+    
+        #opcoes{
+        display: flex; /* Aplica o layout flex */
+        flex-wrap: wrap; /* Permite que os botões "quebrem" para a linha seguinte se necessário */
+        justify-content: space-between; /* Distribui o espaço entre os botões */
+    }
+
+      #opcoes button{
+        font-size: 1.8vw;
+        margin-top: 8%;
+        margin-bottom: 1%;
+    }
+
+    #pergunta-container {
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+    }
+
+
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+        #opcoes{
+        display: flex; /* Aplica o layout flex */
+        flex-wrap: wrap; /* Permite que os botões "quebrem" para a linha seguinte se necessário */
+        justify-content: space-between; /* Distribui o espaço entre os botões */
+        margin-top: 0vh;
+    }
+
+      #opcoes button{
+        font-size: 1.5vw;
+        margin-bottom: 1%;
+    }
+
+    #pergunta-container {
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+    }
+}
+@media (max-width: 1366px) and (orientation: portrait) {
+#opcoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    #opcoes button{
+        font-size: 5vw;
+        width: 80%;
+        margin-top: 6%;
+        margin-bottom: 1%;
+    }
+
+    #pontuacao {
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 5vw;
+        width: 80%; 
+    }
+
+        #pergunta-container {
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+    }
+
+    #barra-tempo {
+        height: 6vw; /* Altura da barra */
+    }
+
+    #pergunta-container {
+    font-size: 5vw;
+    font-weight:900;
+    margin: 10vh 5%; /* Espaçamento entre a pergunta e as opções */
+}
 }
